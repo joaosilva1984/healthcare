@@ -1,0 +1,582 @@
+<!doctype html>
+<html lang="pt">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Health Care</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+  </head>
+  <body>
+    <nav class="navbar col-11 m-auto fixed-top navbar-expand-lg bg-body-tertiary">
+        <div class="container-fluid" style="background-color: #249e32;">
+          <a class="navbar-brand" href="#">
+            <img src="./img/healthcare.jpg" alt="Logo" width="60" height="60" class="d-inline-block me-auto mb-2 mb-lg-0">
+            Health Care
+          </a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link" href="#planos">Planos</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#equipemedica">Equipe</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" data-bs-toggle="modal" data-bs-target="#agenda" href="#">Agendamentos</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#faq">FAQ</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#contato">Contato</a>
+              </li>
+            </ul>
+            <form class="d-flex" role="search">
+              <input class="form-control me-2" type="search" placeholder="Pesquisar" aria-label="Search">
+              <button class="btn btn-outline-success" type="submit">Ir</button>
+            </form>
+          </div>
+        </div>
+    </nav>
+    <!-- Carrosel -->
+    <div id="carouselExampleIndicators" class="carousel slide col-9 m-auto bg-body-success">
+        <div class="carousel-indicators">
+          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+        </div>
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <a href="#equipemedica"><img src="./img/equipe.jpg" class="d-block w-100" alt="..."></a>
+            <div class="carousel-caption d-none d-md-block btn btn-success col-6 mx-auto">
+              <h3 style="color: #249e32;">Equipe médica especializada</h3>
+              <p>Nossa equipe possui excelência em qualidade</p>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <a data-bs-toggle="modal" data-bs-target="#agenda" href="#"><img src="./img/agendamento.jpg" class="d-block w-100" alt="..."></a>
+            <div class="carousel-caption d-none d-md-block btn btn-success col-7 mx-auto">
+              <h3 style="color: #249e32;">Faça seu agendamento conosco!</h3>
+              <p>Preencha nosso formulário e entraremos em contato para confirmar</p>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <a href="#faq"><img src="./img/artigos.jpg" class="d-block w-100" alt="..."></a>
+            <div class="carousel-caption d-none d-md-block btn btn-success col-8 mx-auto">
+              <h3 style="color: #249e32;">Fique por dentro das novidade e tire suas dúvidas</h3>
+              <p>Veja nossa sessão de FAQ - Feedback - Novidades</p>
+            </div>
+          </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+    </div>
+    <!-- Equipe Medica com Cards-->
+    <hr class="col-9 mx-auto">
+    <div id="equipemedica" class="text-center">
+      <br>
+      <br>
+      <br>
+      <br>
+      <h2> Equipe Médica </h2>
+    </div>
+    <div class="row row-cols-1 row-cols-md-3 g-4 m-auto col-9">
+        <div class="col">
+          <div class="card h-100">
+            <img src="./img/ortopedia.jpg" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">Ortopedia</h5>
+              <p class="card-text">A Clínica Heath Care oferece serviços de ortopedia para tratar doenças relacionadas
+              a traumas, como torções, fraturas e luxação, mas também condições congênitas, como tumores ósseos
+              e deformidades. O médico ortopedista é o profissional com mais expertise para realizar o tratamento
+              que o paciente precisa</p>
+              <!-- Button trigger modal -->
+              <button type="button" class="btn btn-success" data-bs-toggle="modal" data-bs-target="#drjoaosilva">
+                Dr. João Silva
+              </button>
+              <!-- Modal Orto -->
+              <div class="modal fade" id="drjoaosilva" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                <div class="modal-dialog">
+                  <div class="modal-content">
+                    <div class="modal-header">
+                      <h1 class="modal-title fs-5" id="exampleModalLabel">Dr. João Silva</h1>
+                    </div>
+                    <div class="modal-body col-9 m-auto">
+                    <img src="./img/joaosilva.jpg" alt="">
+                      <li>Médico Ortopedista graduado em Medicina pela UFSM
+                      <li>Especialização em Ortopedia pela Universidade de São Paulo (USP)
+                      <li>Mestrado em Ortopedia pela Universidade Federal do Rio Grande do Sul (UFRGS)
+                      <li>Doutorado em Ortopedia pela Universidade de Brasília (UnB)
+                      <li>Valor da consulta R$400,00
+                    </div>
+                    <div class="modal-footer">
+                      <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Fechar</button>
+                      <button class="btn btn-primary" type="button" data-bs-toggle="modal" data-bs-target="#agenda">Agende aqui!</button>
+                    </div>
+                  </div>  
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card h-100">
+            <img src="./img/cardiologia.jpg" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">Cardiologia</h5>
+              <p class="card-text">A Clínica Heath Care oferece serviços de cardiologia para cuidar das doenças
+              do coração e demais componentes do sistema circulatório. Eles são referência em exames, diagnósticos
+              e tratamentos cardiológicos de todos os tipos</p>
+              <!-- Button trigger modal -->
+              <button type="button" class="btn btn-success" data-bs-toggle="modal" data-bs-target="#drjosesoares">
+                Dr. Jose Soares
+              </button>
+              <!-- Modal Cardio -->
+              <div class="modal fade" id="drjosesoares" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                <div class="modal-dialog">
+                  <div class="modal-content">
+                    <div class="modal-header">
+                      <h1 class="modal-title fs-5" id="exampleModalLabel">Dr. Jose Soares</h1>
+                    </div>
+                    <div class="modal-body col-9 m-auto">
+                    <img src="./img/josesoares.jpg" alt="">
+                      <li>Graduação em Medicina pela UFRGS
+                      <li>Especialização em Cardiologia pelo Hospital de Clínicas de Porto Alegre
+                      <li>Médico cardiologista no Hospital Moinhos de Vento por 5 anos
+                      <li>Conhecimento em ecocardiograma, eletrocardiograma e teste ergométrico
+                      <li>Valor da consulta R$400,00
+                    </div>
+                    <div class="modal-footer">
+                      <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Fechar</button>
+                      <button class="btn btn-primary" type="button" data-bs-toggle="modal" data-bs-target="#agenda">Agende aqui!</button>
+                    </div>
+                  </div>  
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card h-100">
+            <img src="./img/oftalmologia.jpg" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">Oftalmologia</h5>
+              <p class="card-text">Oferecemos serviços de oftalmologia para cuidar da saúde dos seus olhos.
+              Nossos médicos oftalmologistas são especialistas em diagnosticar e tratar doenças oculares,
+              como catarata, glaucoma e degeneração macular. Além disso, oferecemos exames de rotina para
+              garantir que seus olhos estejam saudáveis. Agende sua consulta hoje mesmo!</p>
+              <!-- Button trigger modal -->
+              <button type="button" class="btn btn-success" data-bs-toggle="modal" data-bs-target="#dralarissaschemmer">
+                Dra. Larissa Schemmer
+              </button>
+              <!-- Modal Oftalmo-->
+              <div class="modal fade" id="dralarissaschemmer" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                <div class="modal-dialog">
+                  <div class="modal-content">
+                    <div class="modal-header">
+                      <h1 class="modal-title fs-5" id="exampleModalLabel">Dra. Larissa Schemmer</h1>
+                    </div>
+                    <div class="modal-body col-9 m-auto">
+                    <img src="./img/larissaschemmer.jpg" alt="">
+                      <li>Graduação em Medicina pela UPF e especialização em Oftalmologia pelo Hospital
+                          de Olhos de Passo Fundo
+                      <li>Médica oftalmologista no Hospital São Vicente por 3 anos
+                      <li>Conhecimento em exames de retina, catarata e glaucoma
+                      <li>Valor da consulta R$400,00
+                    </div>
+                    <div class="modal-footer">
+                      <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Fechar</button>
+                      <button class="btn btn-primary" type="button" data-bs-toggle="modal" data-bs-target="#agenda">Agende aqui!</button>
+                    </div>
+                  </div>  
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card h-100">
+            <img src="./img/endocrinologia.jpg" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">Endocrinologia</h5>
+              <p class="card-text">Temos serviços de endocrinologia para cuidar da saúde do seu corpo. Nossos médico
+               endocrinologista é especialista em diagnosticar e tratar doenças hormonais, como diabetes e
+               hipotireoidismo. Agende sua consulta hoje mesmo!</p>
+              <button type="button" class="btn btn-success" data-bs-toggle="modal" data-bs-target="#draugustomendes">
+                Dr. Augusto Mendes
+              </button>
+              <!-- Modal Endo-->
+              <div class="modal fade" id="draugustomendes" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                <div class="modal-dialog">
+                  <div class="modal-content">
+                    <div class="modal-header">
+                      <h1 class="modal-title fs-5" id="exampleModalLabel">Dr. Augusto Mendes</h1>
+                    </div>
+                    <div class="modal-body col-9 m-auto">
+                    <img src="./img/augustomendes.jpg" alt="">
+                      <li>Graduação em Medicina pela Unijuí
+                      <li>Especialização em Endocrinologia pelo Hospital de Clínicas de Porto Alegre
+                      <li>Médico endocrinologista no Hospital São Vicente por 3 anos
+                      <li>Conhecimento em diabetes e hipotireoidismo
+                      <li>Valor da consulta R$350,00
+                    </div>
+                    <div class="modal-footer">
+                      <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Fechar</button>
+                      <button class="btn btn-primary" type="button" data-bs-toggle="modal" data-bs-target="#agenda">Agende aqui!</button>
+                    </div>
+                  </div>  
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+            <div class="card h-100">
+              <img src="./img/trabalho.jpg" class="card-img-top" alt="...">
+              <div class="card-body">
+                <h5 class="card-title">Medicina do Trabalho</h5>
+                <p class="card-text">A Clínica Health Care oferece serviços de medicina do trabalho para cuidar da saúde
+                 dos seus funcionários. Nossos médicos do trabalho são especialistas em prevenir e tratar doenças
+                 relacionadas ao trabalho, como lesões por esforço repetitivo e estresse ocupacional.</p>
+                <button type="button" class="btn btn-success" data-bs-toggle="modal" data-bs-target="#dralaurabenhur">
+                  Dra. Laura Benhur
+                </button>
+                <!-- Modal Trabalho -->
+                <div class="modal fade" id="dralaurabenhur" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                  <div class="modal-dialog">
+                    <div class="modal-content">
+                      <div class="modal-header">
+                        <h1 class="modal-title fs-5" id="exampleModalLabel">Dra. Laura Benhur</h1>
+                      </div>
+                      <div class="modal-body col-9 m-auto">
+                      <img src="./img/laurabenhur.jpg" alt="">
+                        <li>Graduação em Medicina pela UPF
+                        <li>Especialização em Medicina do Trabalho pela Universidade Federal de Santa Maria
+                        <li>Médica do trabalho na empresa XYZ por 5 anos
+                        <li>Conhecimento em prevenção e tratamento de doenças relacionadas ao trabalho
+                        <li>Valor da consulta R$300,00
+                      </div>
+                      <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Fechar</button>
+                        <button class="btn btn-primary" type="button" data-bs-toggle="modal" data-bs-target="#agenda">Agende aqui!</button>
+                      </div>
+                    </div>  
+                  </div>
+                </div>
+              </div>
+            </div>
+        </div>
+    </div>
+    <br>
+    <!-- Agendamento dentro de um Modal (teste) -->
+    
+    <div class="d-grid gap-2 col-9 mx-auto">
+      <button class="btn btn-success" type="button" data-bs-toggle="modal" data-bs-target="#agenda">Clique para agendar!</button>
+    </div>
+    <!-- Modal do Agendamento-->
+    <div class="modal fade" id="agenda" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+      <div div class="modal-dialog modal-dialog-centered modal-dialog-scrollable modal-lg">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h1 class="modal-title fs-5 mx-auto">Formulário de Agendamento</h1>
+          </div>
+          <div class="modal-header col-10 m-auto">
+            <p>Preencha o formulário abaixo e em breve entraremos em contato com você para mais informações.</p>
+          </div>
+          <div class="modal-body col-10 m-auto">
+            <form class="row g-3">
+              <div class="row g3">
+                <div class="col-md-12">
+                  <label for="name" class="form-label">Nome</label>
+                  <input type="text" class="form-control" id="name" value="" required>
+                </div>
+                <div class="col-md-12">
+                  <label for="surname" class="form-label">Sobrenome</label>
+                  <input type="text" class="form-control" id="surname" value="" required>
+                </div>
+              </div>
+              <div class="row g3">
+                <div class="col-md-6">
+                  <label for="mail" class="form-label">Email</label>
+                  <input type="email" class="form-control" id="mail" placeholder="nome@dominio.com" required>
+                </div>
+                <div class="col-md-6">
+                  <label for="cell" class="form-label">Telefone</label>
+                  <input type="number" class="form-control" id="cell" placeholder="(DDD)0000000000" required>
+                </div>
+              </div>
+              <div class="col-md-6">
+                <label for="cidade" class="form-label">Cidade</label>
+                <input type="text" class="form-control" id="cidade" required>
+              </div>
+              <div class="col-md-3">
+                <label for="estado" class="form-label">UF</label>
+                <select class="form-select" id="estado" required>
+                  <option selected disabled value="">Escolha...</option>
+                  <option>RS</option>
+                  <option>PR</option>
+                  <option>SC</option>
+                </select>
+              </div>
+              <div class="col-md-3">
+                <label for="cep" class="form-label">CEP</label>
+                <input type="number" class="form-control" id="cep" placeholder="00000-000" required>
+              </div>
+              <div class="col-md-12">
+                <label for="endereco" class="form-label">Endereço</label>
+                <input type="text" class="form-control" id="endereco" placeholder="Rua/Avenida, Bairro, Numero" required>
+              </div>
+              <div class="col-md-5">
+                <label for="nascimento" class="form-label">Data de Nascimento</label>
+                <input type="number" class="form-control" id="nascimento" placeholder="00-00-0000" required>
+              </div>
+              <div class="col-md-5">
+                <label for="genero" class="form-label">Gênero</label>
+                <select class="form-select" id="genero" required>
+                  <option selected disabled value="">Escolha...</option>
+                  <option>Masculino</option>
+                  <option>Feminino</option>
+                  <option>Prefiro não responder</option>
+                </select>
+              </div>
+              <hr>
+              <div class="col-md-12">
+                <fieldset class="row mb-12">
+                  <legend class="col-form-label col-12">Já foi atendido anteriormente na Health Care?</legend>
+                  <div class="col-sm-10">
+                    <div class="form-check">
+                      <input class="form-check-input" type="radio" name="gridRadios" id="gridRadios1" value="option1" checked>
+                      <label class="form-check-label" for="gridRadios1">
+                        Sim
+                      </label>
+                    </div>
+                    <div class="form-check">
+                      <input class="form-check-input" type="radio" name="gridRadios" id="gridRadios2" value="option2">
+                      <label class="form-check-label" for="gridRadios2">
+                        Não
+                      </label>
+                    </div>
+                    <div class="form-check disabled">
+                      <input class="form-check-input" type="radio" name="gridRadios" id="gridRadios3" value="option3">
+                      <label class="form-check-label" for="gridRadios3">
+                        Não lembro
+                      </label>
+                    </div>
+                  </div>
+                </fieldset>
+              </div>
+              <div class="mb-3">
+                <label for="exampleFormControlTextarea1" class="form-label">Em caso de afirmativo, diga em que condições e quando</label>
+                <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+              </div>
+              <div class="col-md-12">
+                <label for="profissional" class="form-label">Escolha um especialista de nossa equipe</label>
+                <select class="form-select" id="profissional" required>
+                  <option selected disabled value="">Escolha...</option>
+                  <option>Dr. João Silva</option>
+                  <option>Dra. Larissa Schemmer</option>
+                  <option>Dr. Augusto Mendes</option>
+                  <option>Dr. Jose Mendes</option>
+                  <option>Dra. Laura benhur</option>
+                </select>
+              </div>
+              <div class="col-md-5">
+                <label for="data" class="form-label">Escolha uma data</label>
+                <input type="number" class="form-control" id="data" placeholder="00-00-0000" required>
+              </div>
+              <div class="col-md-3">
+                <label for="horario" class="form-label">Escolha um horário</label>
+                <select class="form-select" id="horario" required>
+                  <option selected disabled value="">Escolha...</option>
+                  <option>9:00</option>
+                  <option>10:00</option>
+                  <option>11:00</option>
+                  <option>13:30</option>
+                  <option>14:30</option>
+                  <option>15:30</option>
+                  <option>16:30</option>
+                  <option>17:30</option>
+                  <option>18:30</option>
+                </select>
+              </div>
+              <div class="col-12">  
+                <div class="form-check">
+                  <input class="form-check-input" type="checkbox" value="" id="invalidCheck2" required>
+                  <label class="form-check-label" for="invalidCheck2">
+                    Concordo com os termos de uso (Leia o termo no link abaixo)
+                  </label>
+                </div>
+              <hr>
+              </div>
+              <div class="d-grid gap-2 col-5 mx-auto">
+                <button class="btn btn-success" type="submit">Enviar</button>
+              </div>
+            </form>
+          </div>
+          <div class="modal-footer">
+            <button class="btn btn-primary" data-bs-target="#termos" data-bs-toggle="modal">Termos de uso</button>
+            <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Fechar</button>
+            <a href="https://web.whatsapp.com/" type="button" class="btn btn-success">Whatsapp</a>
+          </div>
+        </div>  
+      </div>
+    </div>
+    <div class="modal fade" id="termos" aria-hidden="true" aria-labelledby="exampleModalToggleLabel2" tabindex="-1">
+      <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h1 class="modal-title fs-5 mx-auto" id="exampleModalToggleLabel2">Termo de uso de dados</h1>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body">
+            A Health Care coleta e armazena informações pessoais dos usuários para melhorar a experiência do usuário
+            e fornecer serviços personalizados. As informações coletadas incluem nome, endereço de e-mail e número
+            de telefone. O site não compartilha essas informações com terceiros sem o consentimento do usuário.
+            O usuário tem o direito de acessar, corrigir e excluir suas informações pessoais a qualquer momento.
+            O site é regulamentado pela Lei Geral de Proteção de Dados Pessoais (LGPD) e está em conformidade com
+            as regras estabelecidas pela lei.
+          </div>
+          <div class="modal-footer">
+            <button class="btn btn-primary" data-bs-target="#agenda" data-bs-toggle="modal">Voltar ao agendamento</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Planos com Cards -->
+    <hr class="col-9 mx-auto">
+    <div id="planos" class="text-center">
+      <br>
+      <br>
+      <br>
+      <br>
+      <h2> Planos de Saúde </h2>
+    </div>
+    <div class="row row-cols-1 row-cols-md-3 g-4 m-auto col-9">
+      <div class="col">
+        <div class="card h-100">
+          <img src="./img/claromed.jpg" class="card-img-top" alt="...">
+          <div class="card-body">
+            <h5 class="card-title">Claromed</h5>
+            <p class="card-text">O Claromed é um plano de saúde que oferece cobertura para consultas médicas, exames e procedimentos hospitalares.
+              Além disso, o plano oferece atendimento personalizado e suporte 24 horas por dia.</p>
+            <a href="#" class="btn btn-success">Site Claromed</a>
+          </div>
+        </div>
+      </div>
+      <div class="col">
+        <div class="card h-100">
+          <img src="./img/oimed.jpg" class="card-img-top" alt="...">
+          <div class="card-body">
+            <h5 class="card-title">Oimed</h5>
+            <p class="card-text">Oimed é um plano de saúde que oferece cobertura para consultas médicas, exames e procedimentos hospitalares.
+              Com o Oimed, você tem acesso a uma ampla rede de hospitais e clínicas em todo o país.</p>
+            <a href="#" class="btn btn-success">Site Oimed</a>
+          </div>
+        </div>
+      </div>
+      <div class="col">
+        <div class="card h-100">
+          <img src="./img/vivomed.jpg" class="card-img-top" alt="...">
+          <div class="card-body">
+            <h5 class="card-title">Vivomed</h5>
+            <p class="card-text">Com o Vivomed, você tem acesso a uma ampla rede de hospitais e clínicas em todo o país. 
+            Além disso, o plano oferece atendimento personalizado e suporte 24 horas por dia.</p>
+            <a href="#" class="btn btn-success">Site Vivomed</a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- FAQ com according -->
+    <hr class="col-9 mx-auto">
+      <div id="faq" class="text-center">
+        <br>
+        <br>       
+        <br>
+        <br>
+        <h2> FAQ - Perguntas frequentes </h2>
+      </div>
+    <br>
+    <div class="accordion col-9 mx-auto" id="accordionExample">
+      <div class="accordion-item">
+        <h2 class="accordion-header">
+          <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+            <strong>Como faço para agendar uma consulta?</strong>
+          </button>
+        </h2>
+        <div id="collapseOne" class="accordion-collapse collapse show" data-bs-parent="#accordionExample">
+          <div class="accordion-body">
+            Você pode agendar uma consulta ligando para a clínica no nosso telefone e Whatsapp <strong>(55)99999-0909</strong> ou preenchendo um formulário de agendamento
+            online. Nós entraremos em contato com você para confirmar a data e hora da sua consulta.
+          </div>
+        </div>
+      </div>
+      <div class="accordion-item">
+        <h2 class="accordion-header">
+          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+            <Strong>Quais são as formas de pagamento aceitas?</Strong>
+          </button>
+        </h2>
+        <div id="collapseTwo" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+          <div class="accordion-body">
+            Aceitamos dinheiro, cartões de crédito e débito, alem cheques. E é claro temos os <Strong>melhores convênios
+            </Strong> como visto pode ver em nosso site.
+          </div>
+        </div>
+      </div>
+      <div class="accordion-item">
+        <h2 class="accordion-header">
+          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+            <Strong>Quais são os horários de funcionamento da clínica?</Strong>
+          </button>
+        </h2>
+        <div id="collapseThree" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+          <div class="accordion-body">
+            Estamos abertos de <Strong>segunda a sexta-feira</Strong> das 9h às 18:30h e aos <Strong>sábados</Strong> das 9h às 12h.
+          </div>
+        </div>
+      </div>
+      <div class="accordion-item">
+        <h2 class="accordion-header">
+          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
+            <Strong>Quais são as especialidades médicas oferecidas?</Strong>
+          </button>
+        </h2>
+        <div id="collapseFour" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+          <div class="accordion-body">
+            Oferecemos uma ampla variedade de especialidades médicas, incluindo <Strong>cardiologia, 
+            endocrinologia, ortopedia, oftalmologia e medicina do trabalho</Strong>.
+          </div>
+        </div>
+      </div>
+    </div> 
+    </div>
+    <hr class="col-9 mx-auto">
+    <div class="accordion col-9 mx-auto">
+      <h2 id="contato" class="text-center">Contato</h2>
+      <br>
+      <div class="mx-auto" style="width: 100px;">
+        <a href="https://web.whatsapp.com/">
+        <i class="fa-brands fa-whatsapp fa-beat" style="color: #249e32; font-size: 100px;"></i>
+        </a>
+      </div>
+      <br>
+      <br>
+    </div>
+    <footer style="background-color:#249e32;" class="col-11 mx-auto p-3">
+      <div class="col-9 mx-auto" style="text-align: center;">
+        <a href="#">&copy; 2023 João Gabriel e Larissa. Todos os direitos reservados.</a>
+      </div>
+    </footer>
+     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" crossorigin="anonymous"></script>
+     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  </body>
+</html>
